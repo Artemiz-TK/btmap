@@ -1,0 +1,17 @@
+# Ignora todos os arquivos .txt em qualquer lugar
+/**/*.txt
+
+# versão simplificada:
+# etc/*
+!**/.gitkeep
+
+# Ignora o arquivo .editorconfig
+.editorconfig
+
+# Ignora o conteúdo da pasta .vscode/, mas não a pasta em si
+/.vscode/*
+# Reverte a regra de ignorar para o arquivo settings.json dentro da pasta
+!/.vscode/settings.json
+
+# Não ignora o arquivo makefile na raiz
+!/makefile
