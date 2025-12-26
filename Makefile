@@ -5,15 +5,10 @@ CC := gcc
 CFLAG := -o
 
 # Output prgram
-PROG := branchTracking.exe
-LOCAL := bin/
+PROG := bin/btmap.exe
 
 all: main.c
 	$(CC) $^ $(CFLAG) $(PROG)
-	mv $(PROG) $(LOCAL)
 
-run: $(LOCAL)$(PROG)
-	./$^
-
-clean: $(LOCAL)*.exe
-	rm -f $^
+run: $(PROG)
+	./$^ -h
